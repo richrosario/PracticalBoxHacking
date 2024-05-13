@@ -2,14 +2,14 @@
 
 Where I keep track of work done across various HTB-style platforms
 
-##HackTheBox
+## HackTheBox
 
 I'll keep a detailed record of boxes pwned in this folder.
 
-##TryHackMe
+## TryHackMe
 
 I prefer HTB but I used TryHackMe for their seasonal challenges.
 
-##Other
+## Other
 
 Exercises found on blogs, Youtube, or other certified platforms.
