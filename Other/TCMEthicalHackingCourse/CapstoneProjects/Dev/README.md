@@ -1,0 +1,35 @@
+#  Dev Walkthrough
+
+- Installed the machine from the Google Drive link
+- Like always we first start with an **nmap**:
+    - Tons of ports open:
+        - 80: We find out it’s running Debian/Apache
+        - 8080: http
+        - 2049: NFS file sharing
+- **First we hit 8080**
+    - Visiting url’s manually
+        - The default page for the IP resolves some Bolt page which shows some folder structures
+        - If we add in port 8080 to the url we get a ton of php versioning information ( information disclosure )
+    - Running FFUFs to explore directories on both the above urls
+        - default
+            - http hit
+                - Found an interesting directory      
+                - There’s a config.yml file that we open to find credentials
+        - 8080
+            - Found some sort of boltwire website(boltwire is some sort of web dev platform)
+                - https://www.exploit-db.com/exploits/48411
+                    - We found an exploits it and just put it into the url, this exploit shows us logged in users
+                        - `index.php?p=action.search&action=../../../../../../../etc/passwd`
+                        - We find a jeanpaul user that’s already logged in
+                            - It’s the full name of that jp name we found in 2049 but now we have that password and the full name
+                        - In as root
+- **Then we hit 2049**
+    - We run showmount to find what’s mounted on the target machine
+        - sudo mount -t nfs 192.168.0.xxx:/srv/nfs /mnt/dev we mount it to our local machine
+            - We find a file and we try to unzip it but it wants a password
+                - We run a zip cracker called fcrackzip against a  world list and find the password!
+                    - **We find two  files**
+                        - todo.txt
+                            - found an initial ‘jp’
+                        - id_rsa: This can be used to connect via ssh!
+                            - we try using that jp we found to ssh but it wants a password!
