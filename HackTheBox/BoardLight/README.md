@@ -1,7 +1,7 @@
 # BoardLight
 
 <p align="center">
-<img src="./pwned.png?raw=true">
+<img src="./Pwned.png?raw=true">
 </p>
 
 Link: https://app.hackthebox.com/machines/BoardLight
@@ -54,11 +54,11 @@ Detailed instructions followed in my own instance are in the 'AzureTrainingLab' 
 
 ## Credits
 
-Dolibarr Explot: https://github.com/nikn0laty/Exploit-for-Dolibarr-17.0.0-CVE-2023-30253
-Dolibarrr Details: https://wiki.dolibarr.org/index.php?title=Authentication,_SSO_and_SSL
-ffuf Fuzz DNS Enumeration: https://github.com/ffuf/ffuf
-MYSQL: https://www.geeksforgeeks.org/mysql-in-kali-linux-command-line/
-SUID Exploit: https://github.com/MaherAzzouzi/CVE-2022-37706-LPE-exploit
-Blog Post when I got stuck: https://medium.com/@RejuKole.com/boardlight-htb-walkthrough-by-reju-kole-69656ec11832
+- Dolibarr Explot: https://github.com/nikn0laty/Exploit-for-Dolibarr-17.0.0-CVE-2023-30253
+- Dolibarrr Details: https://wiki.dolibarr.org/index.php?title=Authentication,_SSO_and_SSL
+- ffuf Fuzz DNS Enumeration: https://github.com/ffuf/ffuf
+- MYSQL: https://www.geeksforgeeks.org/mysql-in-kali-linux-command-line/
+- SUID Exploit: https://github.com/MaherAzzouzi/CVE-2022-37706-LPE-exploit
+- Blog Post when I got stuck: https://medium.com/@RejuKole.com/boardlight-htb-walkthrough-by-reju-kole-69656ec11832
 
 
