@@ -1,0 +1,23 @@
+# Kali Install
+
+<p align="center">
+<img src="./KaliInstall.png?raw=true">
+</p>
+
+- Had some drive issues and had to do a fresh install, thought it may be worth documenting.
+- Also have to re install the OpenVPN to be able to connect to HTB's servers.
+- Hypervisor: VMware Workstation 17 Player
+
+## Kali Install
+1. https://www.kali.org/get-kali/#kali-virtual-machines
+2. Download 64bit version and extract using 7zip
+3. Open the .VMX from VMware
+4. Leaving the specs as default for now 
+5. Logged in and changed the background to a quieter one
+6. Changed default password
+
+
+## HTB Install
+1. https://help.hackthebox.com/en/articles/5185687-introduction-to-lab-access
+2. OpenVPN comes installed by default which, combined with the above guide, makes things easier
+3. Run the open connect command on the file downloaded and you are good to go
