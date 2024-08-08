@@ -47,9 +47,13 @@ These are a rough order of operations for the work done to pwn the Editorialmach
 <img src="./apicall.png?raw=true">
 </p>
 - Use SSH with those creds are we got the user flag
-- Next in the app folder I see it's a git repo. 
+
+- Next in the app folder I see it's a git repo
+
 - Used git log and git show to see if they left anything around in those commits
+
 - Found credentials to prod but I got stuck here
+
 - There are resources online that show how they got to root so I followed them but previous step was as far as I got
 
 
