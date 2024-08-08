@@ -57,10 +57,11 @@ These are a rough order of operations for the work done to pwn the PermX machine
 <img src="./shell.png?raw=true">
 </p>
 
-- Ran sudo -l to check sudo privileges. Found IUser mtz may run the following commands on permx: (ALL : ALL) NOPASSWD: /opt/acl.sh
-- I'm blocked from editing /opt/acl.sh but online I saw someone use something called linked files. Following a video of someone performing something similar on another retired box.
-- What I did was make a script that allows our mtz user to change perms on a file for any user as long as its in the mtz direcory, so we created a link to the sudoers file and repalce the NOPASSWD attribute to ALL.
-- This invovled a lot of trial and error and various resources but I eventually got escalated.
+- Ran sudo -l to check sudo privileges in order to try an escalation.
+- Found user mtz may run the following file with no password: (ALL : ALL) NOPASSWD: /opt/acl.sh
+- Got a bit stuck here but looking online I saw someone messing around with 'linked files' in a similar retired box.
+- What I did was make a script that allows our mtz user to change perms on a file for any user as long as its in the mtz directory so we created a link to the sudoers file and repalce the NOPASSWD attribute to ALL.
+- This involved a lot of trial and error and various resources but I eventually got escalated.
 - Root flag was in there root directory.
 
 
