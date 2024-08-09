@@ -7,3 +7,4 @@ I'll keep a detailed record of boxes pwned in this folder.
 - BoardLight
 - PermX
 - Editorial
+- GreenHorn
