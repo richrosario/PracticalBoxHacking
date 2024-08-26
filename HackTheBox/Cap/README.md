@@ -14,7 +14,7 @@ These are a rough order of operations for the work done to pwn the Cap on Hack T
 - Ran an NMAP scan to see 3 open ports(21,22,80)
 
 <p align="center">
-<img src="./nmapp.png?raw=true">
+<img src="./nmap.png?raw=true">
 </p>
 
 - Port 80 has some sort of security snapshot dashboard that I can navigate as a user called 'nathan'
