@@ -8,3 +8,4 @@ I'll keep a detailed record of boxes pwned in this folder.
 - PermX
 - Editorial
 - GreenHorn
+- Cap
